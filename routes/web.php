@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\StudentController;
+use App\Http\Controllers\ChartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +14,5 @@ use App\Http\Controllers\StudentController;
 |
 */
 
-Route::get('', [StudentController::class, 'index']);
+Route::get('/', [ChartController::class, 'index']);
+Route::get('fetch_data', [ChartController::class, 'fetchData']);

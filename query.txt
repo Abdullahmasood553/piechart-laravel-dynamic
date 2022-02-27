@@ -1,0 +1,17 @@
+INSERT INTO data_analytics (name, month, year) VALUES
+('Lenovo', 'January', '2021'), 
+('HP', 'January', '2021'), 
+('Dell', 'February', '2020'),
+('Asus', 'March', '2019'),
+('Acer', 'April', '2022'),
+('Asus', 'May', '2022'),
+('Dell', 'June', '2019'), 
+('HP', 'July', '2021'), 
+('HP', 'August', '2021'), 
+('HP', 'September', '2020'), 
+('Lenovo', 'October', '2022'), 
+('Asus', 'November', '2020'), 
+('Lenovo', 'December', '2021'), 
+('HP', 'January', '2019');
+
+
