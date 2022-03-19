@@ -4,6 +4,11 @@
     <title>PIE Chart</title>
 
     <style>
+        .container {
+            padding: 0;
+            margin: 0;
+        }
+
         h1 {
             color: #fff;
             background:#333;
@@ -15,7 +20,6 @@
             padding-bottom: 100%;
             height: 0;
             overflow:hidden;
-       
         }
 
         #piechart {
@@ -24,7 +28,6 @@
             left: 0;
             width:50%;
             height:30%;
-
         }
     </style>
     <!-- CSS only -->
@@ -33,7 +36,7 @@
 
 <body>
 
-        <div>
+        <div class="container">
             <h1>Dynamic Bar Charts | AJAX & JQuery</h1>
         </div>
         <div  id="chart_wrap">
