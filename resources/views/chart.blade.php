@@ -4,34 +4,42 @@
     <title>PIE Chart</title>
 
     <style>
-#chart_wrap {
-    position: relative;
-    width: 80%; 
-   min-height: 600px;
-}
+        h1 {
+            color: #fff;
+            background:#333;
+            padding: 8px 4px;
+            text-align: center;
+        }
+        #chart_wrap {
+            position: relative;
+            padding-bottom: 100%;
+            height: 0;
+            overflow:hidden;
+       
+        }
 
-#piechart {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100%;
-    height:100%;
-}
+        #piechart {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:50%;
+            height:30%;
+
+        }
     </style>
     <!-- CSS only -->
-  <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <div class="container">
-        <div >
-            <h1 class="bg-dark text-white p-4 text-center">Dynamic Bar Charts | AJAX & JQuery</h1>
+
+        <div>
+            <h1>Dynamic Bar Charts | AJAX & JQuery</h1>
         </div>
         <div  id="chart_wrap">
             <div id="piechart"></div>
         </div>
-    </div>
+
 </body>
 
 
@@ -70,7 +78,8 @@
         var options = {
             title: 'Sales Chart',
             width: '100%',
-        height: '100%'
+            height: '100%',
+          // colors: ['#D44E41'],
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -94,9 +103,6 @@
             }
         });
     }
-
-
-
 
 </script>
 
