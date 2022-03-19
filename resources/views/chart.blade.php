@@ -47,7 +47,7 @@
 
     function drawChart(drawChart) {
         let jsonData = drawChart;
-        console.log(jsonData);
+    
         let data = new google.visualization.arrayToDataTable([]);
         data.addColumn({type: 'string', label: 'Name'});
          data.addColumn({type: 'number', label: 'Sales'});
