@@ -80,8 +80,8 @@
 
         var options = {
             title: 'Sales Chart',
-            width: '100%',
-            height: '100%',
+            // width: '100%',
+            // height: '100%',
           // colors: ['#D44E41'],
         };
 

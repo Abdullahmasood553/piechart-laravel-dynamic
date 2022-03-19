@@ -17,6 +17,7 @@ class ChartController extends Controller
         $data = DataAnalytics::select(DB::raw('COUNT(*) as total_sales, name'))
         ->groupBy('name')
         ->get();
+  
         foreach($data->toArray() as $row)
         {
          $output[] = array(
