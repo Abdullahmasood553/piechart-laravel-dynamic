@@ -38,12 +38,17 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script type="text/javascript">
+    // google.charts.load('current', {
+    //     'packages': ['corechart'], 'callback': drawChart
+    // });
+
     google.charts.load('current', {
-        'packages': ['corechart'], 'callback': drawChart
+        packages: ['corechart']
+    });
+    google.charts.setOnLoadCallback(function () {
+        load_data();
     });
 
-
-    google.charts.setOnLoadCallback(drawChart);
 
     function drawChart(drawChart) {
         let jsonData = drawChart;
@@ -90,10 +95,7 @@
         });
     }
 
-    $(document).ready(function () {
-        load_data();
-        
-    });
+
 
 
 </script>
